@@ -1,12 +1,12 @@
+import Bao from "baojs";
 import { db, todos } from "./drizzle/schema";
+const port = 8080;
+const app = new Bao();
 
-const server = Bun.serve({
-  hostname: "::",
-  port: process.env.PORT ?? 3000,
-  async fetch(request) {
-    const data = await db.select().from(todos)
-    return new Response(JSON.stringify(data));
-  },
+app.get("/", async (ctx) => {
+  const data = await db.select().from(todos);
+  return ctx.sendPrettyJson(data);
 });
 
-console.log(`Listening on http://localhost:${server.port}`);
+const server = app.listen({ port });
+console.log(`http://${server.hostname}:${server.port}/`); // http://0.0.0.0:3000/

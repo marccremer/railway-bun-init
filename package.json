@@ -3,9 +3,18 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "start": "bun run index.ts"
+    "start": "bunx platformatic db start"
   },
-  "dependencies": { "@t3-oss/env-core": "^0.7.1", "drizzle-orm": "^0.28.6", "postgres": "^3.4.0", "zod": "^3.22.4" },
+  "dependencies": {
+    "@fastify/cors": "^8.4.0",
+    "@t3-oss/env-core": "^0.7.1",
+    "baojs": "^0.2.1",
+    "date-and-time": "^3.0.3",
+    "drizzle-orm": "^0.28.6",
+    "platformatic": "^1.5.2",
+    "postgres": "^3.4.0",
+    "zod": "^3.22.4"
+  },
   "devDependencies": {
     "bun-types": "latest",
     "drizzle-kit": "^0.19.13"
