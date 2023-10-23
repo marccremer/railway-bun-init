@@ -6,7 +6,7 @@
   "db": {
     "connectionString": "{DATABASE_URL}",
     "graphql": {
-      "graphiql": "{ENABLE_GRAPHIQL}"
+      "graphiql": "{PLT_ENABLE_GRAPHIQL}"
     }
   },
   "migrations": {
