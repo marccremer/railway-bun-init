@@ -1,9 +1,13 @@
 {
   "server": {
-    "hostname": "{PLT_SERVER_HOSTNAME}"
+    "hostname": "{PLT_SERVER_HOSTNAME}",
+    "port": "{PLT_SERVER_PORT}"
   },
   "db": {
-    "connectionString": "{DATABASE_URL}"
+    "connectionString": "{DATABASE_URL}",
+    "graphql": {
+      "graphiql": "{ENABLE_GRAPHIQL}"
+    }
   },
   "migrations": {
     "dir": "./migrations",
