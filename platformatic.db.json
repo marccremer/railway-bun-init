@@ -1,7 +1,7 @@
 {
   "server": {
     "hostname": "{PLT_SERVER_HOSTNAME}",
-    "port": "{PLT_SERVER_PORT}"
+    "port": "{PORT}"
   },
   "db": {
     "connectionString": "{DATABASE_URL}",
