@@ -5,9 +5,10 @@
   "scripts": {
     "start": "bun run index.ts"
   },
-  "dependencies": {},
+  "dependencies": { "@t3-oss/env-core": "^0.7.1", "drizzle-orm": "^0.28.6", "postgres": "^3.4.0", "zod": "^3.22.4" },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "drizzle-kit": "^0.19.13"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
